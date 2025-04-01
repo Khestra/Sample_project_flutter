@@ -18,13 +18,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData.dark(),
       title: 'My Demo',
       home: GestureDetector(
         onTap: () {
           FocusScope.of(context).unfocus();
         },
         child: Scaffold(
-          appBar: AppBar(title: Text("My Demo")),
+          appBar: AppBar(title: Text("Prototype")),
           body: SafeArea(
             minimum: EdgeInsets.symmetric(horizontal: 20),
             child: Center(
